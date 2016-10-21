@@ -3,13 +3,46 @@
   "version": "1.0.0",
   "description": "A MERN app that allows users to manage contact lists",
   "main": "server.js",
+  "repository": "https://github.com/cchanningallen/herokuMERN",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start-dev": "hjs-dev-server",
+    "build": "webpack",
+    "deploy": "npm run build && git push heroku master"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
-    "mongodb": "^2.1.6"
+    "hjs-webpack": "^8.3.0",
+    "mongodb": "^2.1.6",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "compression": "^1.6.2",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "^1.0.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "url-loader": "^0.5.7",
+    "webpack-visualizer-plugin": "^0.1.5",
+    "worker-loader": "^0.7.1",
+    "yeticss": "^7.3.0"
   }
 }
