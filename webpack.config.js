@@ -9,10 +9,7 @@ module.exports = getConfig({
     proxy: {
       context: "/api",
       options: {
-        target: "http://localhost:8080",
-        pathRewrite: {
-          "^/api": ""
-        }
+        target: "http://localhost:8080"
       }
     }
   }

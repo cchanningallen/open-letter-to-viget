@@ -10,7 +10,7 @@
     "start": "node server.js",
     "start-dev": "hjs-dev-server",
     "build": "webpack",
-    "deploy": "npm run build && git push heroku master"
+    "deploy": "git push heroku master"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
