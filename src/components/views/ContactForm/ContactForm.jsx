@@ -9,9 +9,9 @@ class ContactForm extends Component {
 
   handleSubmit = () => {
     this.props.onCreate({
-      firstName: "Jenne",
-      lastName: "Nguyen",
-      email: "jenny@mondorobot.com"
+      firstName: "Channing",
+      lastName: "Allen",
+      email: "cchanningallen@gmail.com"
     })
   };
 
