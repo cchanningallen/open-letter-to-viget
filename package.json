@@ -11,7 +11,7 @@
     "dev": "hjs-dev-server",
     "build": "webpack",
     "deploy": "git push heroku master",
-    "postinstall": "webpack --progress --colors"
+    "postinstall": "webpack"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
