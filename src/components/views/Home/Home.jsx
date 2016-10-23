@@ -3,6 +3,7 @@ import './Home.scss';
 import React, { PropTypes, Component } from 'react';
 import ContactsList from 'components/views/ContactsList';
 import ContactForm from 'components/views/ContactForm';
+import Tag from 'components/common/Tag';
 
 class Home extends Component {
   static propTypes = {
@@ -17,7 +18,9 @@ class Home extends Component {
 
     return (
       <div className="Home">
-        <h1 className="Home__title">Hello, world!</h1>
+        <h1 className="Home__title">
+          Contact List <Tag color="blue">DEMO APP</Tag>
+        </h1>
         <div className="grid-flex-container">
           <div className="grid-flex-cell-1of2">
             <ContactsList {...{isLoading: isLoadingContacts, ...props}} />
