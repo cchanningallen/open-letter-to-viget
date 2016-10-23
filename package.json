@@ -9,9 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "hjs-dev-server",
-    "build": "webpack",
+    "build": "webpack --colors --progress",
     "deploy": "git push heroku master",
-    "postinstall": "webpack"
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
