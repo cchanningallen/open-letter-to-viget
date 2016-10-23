@@ -1,6 +1,8 @@
-var getConfig = require('hjs-webpack');
+var webpack       = require('webpack');
+var getConfig     = require('hjs-webpack');
+var path          = require('path');
 
-module.exports = getConfig({
+var config = getConfig({
   in: 'src/app.jsx',
   out: 'public',
   clearBeforeBuild: true,
@@ -14,3 +16,9 @@ module.exports = getConfig({
     }
   }
 });
+
+config.resolve.extensions = ['', '.js', '.jsx'];
+config.resolve.root = [path.resolve(__dirname, 'src')];
+config.sassLoader = { includePaths: [path.resolve(__dirname, 'src', 'theme')] };
+
+module.exports = config;

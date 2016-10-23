@@ -8,14 +8,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start-dev": "hjs-dev-server",
+    "dev": "hjs-dev-server",
     "build": "webpack",
     "deploy": "git push heroku master"
   },
   "dependencies": {
     "body-parser": "^1.13.3",
+    "classnames": "^2.2.5",
     "express": "^4.13.3",
     "hjs-webpack": "^8.3.0",
+    "isomorphic-fetch": "^2.2.1",
     "mongodb": "^2.1.6",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -41,6 +43,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^2.3.1",
     "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
     "webpack-visualizer-plugin": "^0.1.5",
     "worker-loader": "^0.7.1",
     "yeticss": "^7.3.0"
