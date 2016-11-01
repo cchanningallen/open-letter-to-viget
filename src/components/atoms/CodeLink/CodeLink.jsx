@@ -6,7 +6,7 @@ import cxHelpers from 'lib/decorators/classNameHelpers';
 
 const GITHUB_URI = "https://github.com/cchanningallen/open-letter-to-viget";
 
-@cxHelpers
+@cxHelpers("CodeLink")
 class CodeLink extends PureComponent {
   static propTypes = {};
 

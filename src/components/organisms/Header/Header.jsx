@@ -7,7 +7,7 @@ import RotatingTypist from 'components/atoms/RotatingTypist';
 
 const ABOUT_PAGE_URI = "https://www.viget.com/about";
 
-@cxHelpers
+@cxHelpers("Header")
 class Header extends PureComponent {
   static propTypes = {
     day: PropTypes.string.isRequired,

@@ -4,7 +4,8 @@ import React, {PureComponent, PropTypes} from 'react';
 
 import cxHelpers from 'lib/decorators/classNameHelpers';
 
-@cxHelpers class SectionTitle extends PureComponent {
+@cxHelpers("SectionTitle")
+class SectionTitle extends PureComponent {
   static propTypes = {};
 
   render() {

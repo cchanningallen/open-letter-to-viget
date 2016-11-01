@@ -6,7 +6,8 @@ import FA from 'react-fontawesome';
 import cxHelpers from 'lib/decorators/classNameHelpers';
 import SectionTitle from 'components/atoms/SectionTitle';
 
-@cxHelpers class Section extends PureComponent {
+@cxHelpers("Section")
+class Section extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +16,6 @@ import SectionTitle from 'components/atoms/SectionTitle';
   }
 
   static propTypes = {
-    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     expandable: PropTypes.bool
   };

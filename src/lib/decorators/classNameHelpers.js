@@ -35,21 +35,21 @@ function cxMod(base, mod) {
  * @param Component
  * @returns {Object} Component
  */
-export default function classNameHelpers(Component) {
-  const block = Component.name;
+export default function classNameHelpers(block) {
+  return function(Component) {
+    Component.prototype.cx = function(mod, ...rest) {
+      return cx(block, cxMod(block, mod), this.props.className, ...rest)
+    };
 
-  Component.prototype.cx = function(mod, ...rest) {
-    return cx(block, cxMod(block, mod), this.props.className, ...rest)
-  };
+    Component.prototype.cxEl = function(el, mod, ...rest) {
+      if (typeof el !== 'string') {
+        throw new Error('Called this.cxEl without an element string!')
+      }
+      const cxEl = `${block}__${el}`;
 
-  Component.prototype.cxEl = function(el, mod, ...rest) {
-    if (typeof el !== 'string') {
-      throw new Error('Called this.cxEl without an element string!')
-    }
-    const cxEl = `${block}__${el}`;
+      return cx(cxEl, cxMod(cxEl, mod), ...rest)
+    };
 
-    return cx(cxEl, cxMod(cxEl, mod), ...rest)
-  };
-
-  return Component;
+    return Component;
+  }
 };

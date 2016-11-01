@@ -5,7 +5,7 @@ import React, {PureComponent, PropTypes} from 'react';
 import cxHelpers from 'lib/decorators/classNameHelpers';
 import Typist from 'react-typist';
 
-@cxHelpers
+@cxHelpers("RotatingTypist")
 class RotatingTypist extends PureComponent {
   constructor(props) {
     super(props);

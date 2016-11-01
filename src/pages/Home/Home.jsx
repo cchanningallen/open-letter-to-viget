@@ -18,7 +18,7 @@ const FORMATTED_NAMES = NAMES.map(name => firstNameLastLetter(name));
 
 const SAMPLE_BUILD_SCAN_URI = "https://scans.gradle.com/s/mltba5qnktegg";
 
-@cxHelpers
+@cxHelpers("Home")
 class Home extends PureComponent {
   render() {
     return (

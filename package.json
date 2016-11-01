@@ -8,9 +8,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "hjs-dev-server",
-    "build": "webpack --colors --progress",
-    "deploy": "",
-    "postinstall": "npm run build"
+    "build": "NODE_ENV=production webpack",
+    "deploy": "npm run build && surge -p public"
   },
   "dependencies": {
     "babel": "^6.5.2",
