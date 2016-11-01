@@ -1,0 +1,14 @@
+@import 'constants';
+
+$module: 'Header';
+
+.#{$module} {
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__title-subtext {
+    opacity: 0.4;
+    margin-bottom: 30px;
+  }
+}

@@ -1,5 +1,15 @@
+@import 'constants';
+
 $module: 'Home';
 
 .#{$module} {
-  padding: 1rem;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 3rem;
+
+  &__code-link {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
 }

@@ -1,9 +1,11 @@
 import './Tag.scss';
 
 import React, {PropTypes, Component} from 'react';
-import cx from 'classnames';
+
+import cxHelpers from 'lib/decorators/classNameHelpers';
 import { COLORS } from 'theme/constants';
 
+@cxHelpers
 class Tag extends Component {
   static propTypes = {
     color: PropTypes.oneOf(COLORS)
@@ -17,7 +19,7 @@ class Tag extends Component {
     const { color, children } = this.props;
 
     return (
-      <small className={cx('Tag', {[`Tag--${color}`]: color})}>
+      <small className={this.cx(color)}>
         {children}
       </small>
     );
