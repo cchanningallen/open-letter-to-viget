@@ -17,10 +17,48 @@ const NAMES = ["Emily Bloom", "Kat Stefanski", "Brian Williams", "Andy Rankin", 
 
 const FORMATTED_NAMES = NAMES.map(name => firstNameLastLetter(name));
 
+const CONSOLE_EASTER_EGG = `
+         gvvvv
+        vvvvvvv
+      .. gvvvg
+    .
+  .,
+ .
+.
+,                                            ,
+.                                         v,..,gI
+.                              gg:.,.,gg g,.....g
+..                           g,.........ivv,..,v
+ ,.                    ,gvvvg............;vvvvvgg
+   .,              .gvvvvvv.v............,vvv  ;vvvvvvvvvv
+     ..         .vvvvvvvvvvgg ...........ivvv  ;vvvvvvvvg
+       ...    vvvvvvvvvvvvvvvgi.........vvvvvvvvvvvvvvg
+            vvvvvvvvvvvvvvvvvvIvvi., vvvvvvvvvvvvvg.
+           vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvEEEE
+         ivvvvvvvvvEEE                ,gvvvvvGEEE
+        ;vvvvvGEEE                          Vvv  :E
+        vvvEEEE                                gI
+       v  gEE
+          E
+
+Well hello back!
+I do have a curious mind, and your undercarriage is thrilling.
+I'd love to meet you! My email is cchanningallen@gmail.com.
+
+Also, please feel free to take a spin through my most recent work at 
+https://scans.gradle.com/s/mltba5qnktegg, the front-end I built for Gradle.
+
+Have a fantastic day :)
+`;
+
 @cxHelpers("Home")
 class Home extends PureComponent {
-  renderSection({title, expandable, content}) {
-    return <Section {...{title, expandable}}>{content}</Section>
+  componentDidMount() {
+    console.log(CONSOLE_EASTER_EGG);
+  }
+
+  renderSection({title, expandable, content}, key) {
+    return <Section {...{title, expandable, key}}>{content}</Section>
   }
 
   render() {

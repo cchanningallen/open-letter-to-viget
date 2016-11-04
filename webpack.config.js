@@ -5,7 +5,7 @@ var path          = require('path');
 var config = getConfig({
   in: 'src/app.js',
   out: 'public',
-  clearBeforeBuild: true
+  clearBeforeBuild: '!(images|favicon.ico)'
 });
 
 config.resolve.extensions = ['', '.js', '.jsx', '.scss', '.styl'];
