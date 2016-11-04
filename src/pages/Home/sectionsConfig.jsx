@@ -63,10 +63,10 @@ export default [
     expandable: false,
     content: [
       <p>
-        <strong>At the end of the day, I care far more about loving my work than maximizing my income.</strong> I'm confident we can find a number that works if this is a good fit on both sides.
+        My last salary was $145,000, and my last contract was for $165/hour. Since Boulder isn't San Francisco, I'm looking for $120-130,000.
       </p>,
       <p>
-        My last salary was $145,000, and my last contract was for $165/hour. Since Boulder isn't San Francisco, I'm looking for $120-130,000.
+        <strong>At the end of the day, however, I care far more about loving my work than maximizing my income.</strong> I'm confident we can find a number that works if this is a good fit on both sides.
       </p>
     ]
   },
