@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "hjs-dev-server",
     "build": "NODE_ENV=production webpack",
-    "deploy": "npm run build && surge public --domain happy-love.surge.sh"
+    "deploy": "npm run build && surge public --domain hello-viget.surge.sh"
   },
   "dependencies": {
     "babel": "^6.5.2",
